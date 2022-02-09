@@ -10,7 +10,7 @@ const DEFAULT_IMG = 'https://www.foodserviceandhospitality.com/wp-content/upload
 const PlaceDetails = ({ place, selected, refProp }) => {
   const classes = useStyles();
 
-  if (selected) refProp?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  if(selected) refProp?.current?.scrollIntoView({ behavior: "smooth", block: "start" })
 
   return (
     <Card elevation={6}>
